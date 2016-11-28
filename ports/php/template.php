@@ -336,7 +336,7 @@
             $this->yy->text = '';
             $this->match = '';
         }
-
+        $match = false;
         $rules = $this->currentRules();
         for ($i = 0, $j = count($rules); $i < $j; $i++) {
             preg_match($this->rules[$rules[$i]], $this->input, $tempMatch);
